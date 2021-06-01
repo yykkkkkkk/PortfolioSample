@@ -10,7 +10,38 @@ body {
   
   }
   .color-green {
-  color: aquamarine;
+    color: aquamarine;
+  }
+  
+   /* * Worksのstyleシート */
+   /* */ 
+   .box-works {
+    margin: 80px 0 0;  /* Worksの上とprofileのしたに余白を開ける */
+
+
+
+   }
+   .work-list {
+    list-style: none;
+    width: 100%;
+    max-width: 1076px;
+    margin: 30px auto;
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+   }
+   .work-list li {
+    display: block;
+    width: 100%;
+    max-width: 348px;
+
+
+   }
+   .work-list li img {
+    width: 100%;      /*画像が大きので100%にした。.work-list liのmax-width: 348px;なので画像が348pxになる*/
+    border: 1px solid #ccc; /*画像に枠をつける*/
+/* .color-green { */
+  /* color: aquamarine; */
   
   }
   .sub-title {
@@ -88,4 +119,74 @@ body {
 
    }
 
+   
+    /* 
+   * Worksのstyleシート
+   */
 
+    .box-works{
+    margin: 80px 0 0;  /* Worksの上とprofileのしたに余白を開ける */
+
+
+   }
+   .works-list {
+    list-style: none;
+    width: 100%;
+    max-width: 1076px;
+    margin: 30px auto;
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+   }
+   .works-list li {
+    display: block;
+    width: 100%;
+    max-width: 348px;
+    float: left;    /*画像を横並びにする*/
+    margin-right: 15px;    /*画像を横並びになったら画像同士の間に余白を作る*/
+
+   }
+   .works-list li:last-child {
+    margin-right: 0;  /*画像を横並びにしてmargin-right: 15px;余白を入れたので幅が超えて最後の画像が下に降りたの
+                        ので横並びにするために最後の画像の余白を0にした*/
+
+   }
+   .works-list li img {
+    width: 100%;      /*画像が大きので100%にした。.work-list liのmax-width: 348px;なので画像が348pxになる*/
+    border: 1px solid #ccc;  /*画像に枠をつける*/
+  
+
+
+   }
+   .works-list li h3 {
+      font-size: 24px;
+      margin: 10px 0;
+
+
+   }
+   .works-list li span {
+     font-size: 18px;
+
+   }
+   .works-list li .link {
+     display: flex;
+     justify-content: left;
+     align-items: left;
+     margin-top: 15px;
+
+   }
+   .works-list li .link a {
+    background-color: rgb(226, 226, 226);
+    padding: 5px 20px;
+    margin-right: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+   }
+   .block-footer {
+     clear: both; /*flotによる回り込みを解除*/
+     text-align: center;
+     font-size: 15px;
+     margin: 50px 0 20px;
+
+   }
