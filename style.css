@@ -78,6 +78,7 @@ body {
   /* 
   * profielのstyleシート
   */
+    
    .item-list {
      width: 100%;
      max-width: 348px;
@@ -189,4 +190,113 @@ body {
      font-size: 15px;
      margin: 50px 0 20px;
 
+   }
+
+   /* 
+   *タブレット用のスタイルシート
+   
+   @media screen and (max-width: 767px) {
+      .sub-title {
+        color: red;
+
+      }
+
+   }
+   */
+
+
+
+   /* 
+   *スマホ用のスタイルシート
+   */
+
+   @media screen and (max-width: 767px) {
+
+    .sub-title {
+      color: red;
+
+    }
+    
+    body {
+      min-width: 100%;
+
+    }
+    /* 
+    * headerのスタイルシート
+    */
+
+    .block-header {
+      /* margin: 10px 0; */
+      padding: 0 20px 10px;  /*余白のpxを変える*/
+      box-shadow: 0 8px 8px -5px rgba(204,204,204,0.3);
+      /* box-shadow: 0px 10px 4px -2px gray; */
+      }
+      .block-header a {
+      font-size: 31px;
+      /* color: black; */
+      /* text-decoration: none; */
+      /* letter-spacing: 1px; */
+      
+      
+      }
+      /* 
+      * mainのスタイルシート
+      */
+      .block-main {
+        /* text-align: center; */
+        margin: 50px 0;   /*余白のpxを変える*/
+      }
+      /* 
+      * profileのスタイルシート
+      */
+      .box-profile {
+        padding: 0 10px;   /*paddingで余白を作る*/
+  
+      }
+      .item-list {
+        max-width: 100%;
+  
+      }
+      .item-list b {
+        /* display: block; */
+        font-size: 18px;
+        /* font-weight: normal; */
+        /* margin: 20px 0 30px; */
+    
+       }
+
+
+    
+    .icon-list {
+      max-width: 100%;
+    }
+    .icon-list {
+      margin-right: 25px;   /*余白を入れて幅を広げる*/
+    }
+
+    /* 
+    * worksのスタイルシート
+    */
+    .box-works {
+      margin: 60px 0 0;
+      padding: 0 10px;  /*余白をつける*/
+
+    }
+    .works-list {
+      max-width: 100%;
+
+    }
+    .works-list li {
+      max-width: 100%;
+      float: none;    /*flotを解除*/
+      margin-right: 0; /*余白をなくす*/
+      margin-bottom: 30px; /*余白を作る*/
+    }
+    .works-list h3 {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+    .works-list span {
+      font-size: 14px;
+    }
    }
